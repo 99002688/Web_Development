@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script>
+        function validateform(){
+            if(document.getElementById("uname").value==""){
+                alert("Enter your Name");
+                document.myform.name.focus();
+            }else if(document.getElementById("password").value==""){
+            alert("Enter your password");
+                document.myform.pass.focus();
+            }else if(document.getElementById("gen1").checked=="" && document.getElementById("gen2").checked==""){
+            alert("Enter your gender");
+                document.myform.r1[0].focus();
+            }else{
+            alert("You are Registered");
+                document.myform.submit();
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <form action="success.html"  name="myform">
+    <fieldset>
+        <legend align="center">Demo Form</legend>
+    <table border="0.5" cellpadding="10" cellspacing="10">
+        <tr>
+        <td><b>Enter Name</b></td>
+        <td><input type="text" name="name" id="uname" placeholder="Enter name"/></td>
+        </td><br>
+        </tr>
+        <tr>
+        <td><b>Enter Password</b></td>
+        <td><input type="password" name="pass" id="password" placeholder="Enter password" /></td>
+        </tr>
+    
+        <tr>
+            <td><b>Enter Age</b></td>
+            <td><input type="text" name="age" id="uage" placeholder="Enter age" /></td>
+            </tr>
+    <tr>
+        <td><b>Gender</b></td>
+        <td> <input type="radio" name="r1" id="gen1" value="Male" >Male
+            <input type="radio" name="r1" id="gen2" value="Female">Female</td>
+    </tr>
+    
+
+    
+
+    
+    <tr>
+        <td><input type="button" value="Register" onclick="validateform()"/></td>
+        <td><input type="Reset" value="Clear"/></td>
+    </tr> 
+    
+</table>
+</fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiranga</title>
+    <style>
+        .container1{
+            display: flex;
+            background-color:#FF9933;
+            width: 400px;
+            height: 100px;
+            color: #FF9933; 
+            position: relative;
+            animation-name: example;
+            animation-duration: 20s;
+            margin-top: 300px; 
+            
+        }
+        .container2{
+            display: flex;
+            background-color:white;
+            width: 400px;
+            height: 100px;
+            color: white;
+            position: relative;
+            animation-name: example;
+            animation-duration: 20s; 
+ 
+          
+        }
+        .container3{
+            display: flex;
+            background-color:green;
+            width: 400px;
+            height: 100px;
+            color: green; 
+            position: relative;
+            animation-name: example;
+            animation-duration: 20s;
+ 
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @keyframes example {
+            0%   {left:0px; top:0px;}
+            50%  {left:1500px; top:0px;}
+            100%  {left:0px; top:0px;}
+            
+        }
+
+        .rotate {
+            animation: rotation 20s infinite linear;
+        }
+
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+            transform: rotate(359deg);
+        }
+}
+        
+    </style>
+</head>
+<body>
+    <div class="container1">
+        sdrg
+    </div>
+    <div class="container2">
+        <img src = "images/chakra.png" class="rotate" width=100px height= 100px >
+    </div>
+    <div class="container3">
+        sdrg
+    </div>
+    
+</body>
+</html>
